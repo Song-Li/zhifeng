@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>零信任智能体防护平台 — 为企业 AI Agent 建立安全控制层 | 智锋安全 Bladesec</title>
+<meta name="description" content="AgentGuard 面向 AI Agent、MCP 与工具调用的新一代安全控制层。为企业 AI Agent 建立工具调用、权限控制、数据访问、上下文风险检测和行为审计能力。">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<nav class="nav">
+  <div class="container">
+    <a href="/" class="nav-brand"><img src="../assets/images/logo.png" alt="智锋安全 Bladesec"></a>
+    <ul class="nav-links">
+      <li><a href="/">首页</a></li>
+      <li><a href="/products/" class="active">产品</a></li>
+      <li><a href="/solutions/">方案</a></li>
+      <li><a href="/about/">团队</a></li>
+      <li><a href="/contact/" class="nav-cta">申请演示</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="菜单">
+      <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+    </button>
+  </div>
+</nav>
+
+<section class="product-hero">
+  <div class="container">
+    <div class="product-hero-content">
+      <div class="breadcrumb"><a href="../">首页</a> <span>/</span> <a href="index.html">产品</a> <span>/</span> <span>AgentGuard</span></div>
+      <div class="product-hero-tag">管 Agent — 零信任智能体安全</div>
+      <h1 class="product-hero-title">零信任智能体防护平台：为企业 AI Agent 建立安全控制层</h1>
+      <p class="product-hero-desc">AI Agent 正在从"回答问题的助手"变成可以调用工具、访问数据、连接系统、自动执行操作的新型数字主体。智能体越能干，越需要零信任控制。AgentGuard 对每一次感知、决策、工具调用、数据访问和自动执行进行持续验证、最小授权、行为审计和风险阻断。</p>
+    </div>
+    <div class="product-hero-icon">G</div>
+  </div>
+</section>
+
+<!-- Why Needed -->
+<section class="section section-alt" style="padding-top:0;">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">为什么需要</div>
+      <h2 class="section-title">智能体越能干，越需要零信任控制</h2>
+      <p class="section-subtitle">AI Agent 不仅是聊天机器人——它们可以调用工具、访问数据库、连接业务系统、自动执行高风险操作。传统安全手段无法覆盖这个全新的运行边界。</p>
+    </div>
+    <div class="crisis-grid">
+      <div class="crisis-item card">
+        <div class="crisis-num" style="font-size:1.5rem;font-weight:700;">Prompt</div>
+        <div class="crisis-label">注入攻击</div>
+        <div class="crisis-desc">恶意指令诱导 Agent 执行危险操作，绕过安全策略</div>
+      </div>
+      <div class="crisis-item card">
+        <div class="crisis-num" style="font-size:1.5rem;font-weight:700;">Tool</div>
+        <div class="crisis-label">工具调用失控</div>
+        <div class="crisis-desc">MCP Server 描述被投毒，工具权限过宽导致越权调用</div>
+      </div>
+      <div class="crisis-item card">
+        <div class="crisis-num" style="font-size:1.5rem;font-weight:700;">Data</div>
+        <div class="crisis-label">数据泄露</div>
+        <div class="crisis-desc">Agent 自动访问或外传敏感数据，缺少审批和审计</div>
+      </div>
+      <div class="crisis-item card">
+        <div class="crisis-num" style="font-size:1.5rem;font-weight:700;">Chain</div>
+        <div class="crisis-label">责任链不清</div>
+        <div class="crisis-desc">多智能体协作时行为过程不可见、不可解释、不可追溯</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Core Capabilities -->
+<section class="section">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">核心能力</div>
+      <h2 class="section-title">七大安全控制能力</h2>
+    </div>
+    <div class="cards cards-2">
+      <div class="card">
+        <h3 class="card-title">身份与权限控制</h3>
+        <p class="card-desc">Agent 身份管理、最小权限策略、分级授权、高风险操作二次确认、按任务和上下文动态授权。</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">工具调用安全</h3>
+        <p class="card-desc">调用前风险判断、工具描述可信校验、参数检查、白名单/黑名单策略、高危调用阻断或转人工审批。</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">Prompt 注入防护</h3>
+        <p class="card-desc">Prompt 注入检测、间接注入识别、外部文档中的恶意指令识别、上下文污染检测、系统指令边界保护。</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">数据访问保护</h3>
+        <p class="card-desc">敏感数据识别、访问策略控制、数据脱敏与隐藏、防外传检查、外部模型调用前数据风险检查。</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">行为监控与审计</h3>
+        <p class="card-desc">操作链路记录、工具调用日志、数据访问轨迹、决策过程审计、异常行为检测、事后追溯与合规报告。</p>
+      </div>
+      <div class="card">
+        <h3 class="card-title">沙箱与隔离执行</h3>
+        <p class="card-desc">高风险任务沙箱执行、工具隔离、网络访问限制、文件访问限制、命令执行限制、回滚与补救机制。</p>
+      </div>
+      <div class="card" style="grid-column: 1 / -1; max-width: 50%; margin: 0 auto;">
+        <h3 class="card-title">多 Agent 协作治理</h3>
+        <p class="card-desc">多 Agent 任务流编排安全、权限边界控制、跨 Agent 数据传递审计、任务责任链追踪、协作过程风险识别。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Customer Value -->
+<section class="section section-alt">
+  <div class="container">
+    <div class="section-header">
+      <div class="section-label">客户价值</div>
+      <h2 class="section-title">让企业安全部署内部 AI Agent</h2>
+    </div>
+    <div class="feature-list">
+      <div class="feature-item">
+        <div class="feature-icon">1</div>
+        <div>
+          <div class="feature-title">敢于部署</div>
+          <div class="feature-desc">为企业 AI Agent 建立安全控制层，让企业敢于引入和部署内部智能体。</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">2</div>
+        <div>
+          <div class="feature-title">防注入诱导</div>
+          <div class="feature-desc">防止 Agent 被 Prompt 注入诱导执行危险操作，保护系统指令和用户指令边界。</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">3</div>
+        <div>
+          <div class="feature-title">管住工具调用</div>
+          <div class="feature-desc">不默认信任任何一次工具调用，每次调用都经过风险判断和权限验证。</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">4</div>
+        <div>
+          <div class="feature-title">防数据泄露</div>
+          <div class="feature-desc">防止敏感数据被 Agent 泄露到外部模型或外部系统，每次数据访问都可控可审计。</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">5</div>
+        <div>
+          <div class="feature-title">合规审计</div>
+          <div class="feature-desc">支持企业 AI 应用的合规、审计和内控要求，每一次关键操作都有记录、有审批、有追溯。</div>
+        </div>
+      </div>
+      <div class="feature-item">
+        <div class="feature-icon">6</div>
+        <div>
+          <div class="feature-title">降低责任风险</div>
+          <div class="feature-desc">降低 AI Agent 大规模落地时的安全和责任风险，让智能体安全真正可管理、可治理。</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cta-section">
+  <div class="container">
+    <h2 class="cta-title">了解 AgentGuard 如何保护您的 AI Agent 运行安全</h2>
+    <p class="cta-desc">从提示词安全，升级为智能体运行安全</p>
+    <p class="cta-email">contact@bladesec.ai</p>
+    <a href="../contact/" class="btn btn-primary btn-lg">申请演示</a>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <a href="/" class="footer-brand"><img src="../assets/images/logo-white.png" alt="智锋安全"></a>
+    <div class="footer-links">
+      <a href="../products/">产品</a>
+      <a href="../solutions/">方案</a>
+      <a href="../about/">团队</a>
+      <a href="../contact/">联系我们</a>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="container">&copy; 2026 智锋安全 Bladesec. 自主可控的 AI 原生安全基础设施。</div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

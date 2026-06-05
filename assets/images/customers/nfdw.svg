@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40">
+  <rect x="2" y="4" width="36" height="32" rx="6" fill="#1a5c2a"/>
+  <path d="M8 18l4 4 6-8" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M18 14l4 4 6-8" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="48" y="16" font-family="'Microsoft YaHei', 'PingFang SC', sans-serif" font-weight="800" font-size="13" fill="#1a5c2a">中国南方电网</text>
+  <text x="48" y="31" font-family="Arial, sans-serif" font-weight="600" font-size="8" fill="#666">CHINA SOUTHERN POWER GRID</text>
+</svg>
