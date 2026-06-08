@@ -1,0 +1,31 @@
+<svg width="1200" height="760" viewBox="0 0 1200 760" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="1200" y2="760"><stop stop-color="#00A6C8"/><stop offset="1" stop-color="#7C4DFF"/></linearGradient>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="760"><stop stop-color="#F7FAFF"/><stop offset="1" stop-color="#FFFFFF"/></linearGradient>
+    <filter id="s"><feDropShadow dx="0" dy="24" stdDeviation="30" flood-color="#0B1A33" flood-opacity=".12"/></filter>
+    <filter id="glow"><feGaussianBlur stdDeviation="18"/><feColorMatrix type="matrix" values="0 0 0 0 0.12 0 0 0 0 0.36 0 0 0 0 1 0 0 0 .24 0"/></filter>
+  </defs>
+  <rect width="1200" height="760" rx="44" fill="url(#bg)"/>
+  <circle cx="860" cy="220" r="210" fill="url(#g)" opacity=".09" filter="url(#glow)"/>
+  <circle cx="360" cy="530" r="240" fill="url(#g)" opacity=".06"/>
+  <g filter="url(#s)">
+    <rect x="96" y="86" width="1008" height="588" rx="34" fill="white" stroke="#DDE8F2" stroke-width="2"/>
+    <rect x="142" y="132" width="126" height="126" rx="30" fill="url(#g)" opacity=".13"/>
+    <path d="M174 205H238M174 232H226M174 178H216" stroke="url(#g)" stroke-width="14" stroke-linecap="round"/>
+    <text x="300" y="184" font-family="'Microsoft YaHei','PingFang SC',Arial" font-size="60" font-weight="900" fill="#0B1A33">渗锋</text>
+    <text x="300" y="242" font-family="'Microsoft YaHei','PingFang SC',Arial" font-size="32" font-weight="800" fill="#00A6C8">AI渗透测试</text>
+    <text x="142" y="346" font-family="'Microsoft YaHei','PingFang SC',Arial" font-size="34" font-weight="800" fill="#334A66">攻击面 / 攻击链 / PoC验证</text>
+    <text x="142" y="410" font-family="'Microsoft YaHei','PingFang SC',Arial" font-size="28" fill="#6B85A0">验证真实可打穿路径</text>
+    <rect x="142" y="504" width="916" height="14" rx="7" fill="#EAF1FF"/>
+    <rect x="142" y="504" width="580" height="14" rx="7" fill="url(#g)"/>
+    <g opacity=".9">
+      <rect x="760" y="330" width="210" height="118" rx="18" fill="#F8FAFD" stroke="#DDE8F2"/>
+      <rect x="810" y="372" width="110" height="16" rx="8" fill="url(#g)" opacity=".65"/>
+      <rect x="810" y="402" width="72" height="12" rx="6" fill="#CBD8EA"/>
+      <circle cx="770" cy="560" r="34" fill="url(#g)" opacity=".85"/>
+      <circle cx="872" cy="560" r="34" fill="url(#g)" opacity=".48"/>
+      <circle cx="974" cy="560" r="34" fill="url(#g)" opacity=".28"/>
+      <path d="M804 560H838M906 560H940" stroke="#C6D6EA" stroke-width="6" stroke-linecap="round"/>
+    </g>
+  </g>
+</svg>
