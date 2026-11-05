@@ -1,2 +1,11 @@
 .superpowers/
 node_modules/
+
+# Internal research and source material stay local.
+/docs/
+
+# Retired product concepts; the website uses mechanism diagrams and real interfaces.
+/assets/visuals/dongfeng-v2-*.webp
+/assets/visuals/shenfeng-v2-*.webp
+/assets/visuals/xinfeng-v2-*.webp
+/assets/visuals/yufeng-v2-*.webp
