@@ -1,0 +1,41 @@
+name: Publish website to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Checkout published branch
+        uses: actions/checkout@v4
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+      - name: Prepare static website
+        run: |
+          mkdir -p _site
+          rsync -a --exclude='/.git/' --exclude='/.github/' --exclude='/scripts/' --exclude='/docs/' --exclude='/_site/' --exclude='/README.md' --exclude='/.gitignore' ./ _site/
+          test -s _site/index.html
+          test -s _site/demo/index.html
+          test "$(cat _site/CNAME)" = "bladesec.ai"
+      - name: Upload complete website including demo
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v5

@@ -27,3 +27,11 @@ node scripts/preview.mjs
 咨询表单生成邮件或复制内容，由访客确认发送；不向后台提交个人信息。
 
 内部研究底稿和未使用的概念素材保留在本地，不纳入仓库。正式静态发布只需页面、assets、站点图标、manifest、robots.txt、sitemap.xml、CNAME 与 .nojekyll。
+
+## GitHub Pages 发布
+
+正式站点：https://bladesec.ai/ 。展厅动画：https://bladesec.ai/demo/index.html 。
+
+`.github/workflows/pages.yml` 在推送 `main` 或手动运行时发布静态站点。GitHub Pages 的 Source 使用 GitHub Actions；自定义域名仍为 `bladesec.ai`。
+
+工作流会校验官网首页、`demo/index.html` 和 CNAME，然后发布页面与资源。内部说明、构建脚本和工作流源文件不进入发布包。部署成功后，需确认正式 URL 返回最新版；仅完成 git push 不代表页面已经更新。
